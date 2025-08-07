@@ -1,0 +1,12 @@
+# Exported from Render on 2025-08-07T19:28:56Z
+services:
+- type: web
+  name: critico2025-api
+  runtime: python
+  repo: https://github.com/DalPiero/2025-Cr-tico-Guardi-o-dos-Textos-Aut-nticos
+  plan: free
+  region: virginia
+  buildCommand: pip install -r requirements.txt
+  startCommand: python api_2025_critico.py
+  autoDeployTrigger: commit
+version: "1"
